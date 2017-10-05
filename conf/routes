@@ -1,0 +1,12 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET      /student					controllers.StudentController.getStudents
+
+POST     /student					controllers.StudentController.postStudent
+OPTIONS  /student 					controllers.StudentController.preflight
+
+POST     /student/emailunique		controllers.StudentController.emailUnique
+OPTIONS  /student/emailunique 		controllers.StudentController.preflight
+
